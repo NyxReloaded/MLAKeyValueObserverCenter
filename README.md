@@ -5,7 +5,7 @@ MLAKeyValueObserverCenter allows you to use K.V.O as you will do with NSNotifica
 
 Its purpose is to make K.V.O notification more flexible :
 * Selectors and blocks as callback
-* Safe remove on observer
+* Safe remove observer
 * Allow retrieve observers for a given object’s keyPath
 
 ### How to use it ?

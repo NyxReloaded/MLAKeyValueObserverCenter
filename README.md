@@ -25,6 +25,10 @@ Its purpose is to make K.V.O notification more flexible.
 }
 ```
 
+```objective-c
+[[MLAKeyValueObserverCenter defaultCenter] removeObserver:self];
+```
+
 ### Using block 
 
 ```objective-c

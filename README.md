@@ -11,7 +11,10 @@ Its purpose is to make K.V.O notification more flexible.
 ### How to use it ?
 
 ```objective-c
-[[MLAKeyValueObserverCenter defaultCenter] addObserver:self selector:@selector(titleDidChange:) keyPath:@"title" object:self.person];
+[[MLAKeyValueObserverCenter defaultCenter] addObserver:self 
+                                              selector:@selector(titleDidChange:) 
+                                               keyPath:@"name" 
+                                                object:self.person];
 ```
 
 
@@ -25,8 +28,10 @@ Its purpose is to make K.V.O notification more flexible.
 ### Using block 
 
 ```objective-c
-id observer = [[MLAKeyValueObserverCenter defaultCenter] addObserverForKeyPath:@"name" object:self usingBlock:^(NSDictionary *changes) {
-        NSLog(@« Name has changed ! »);
+id observer = [[MLAKeyValueObserverCenter defaultCenter] addObserverForKeyPath:@"name" 
+                                                                        object:self.person 
+                                                                    usingBlock:^(NSDictionary *changes) {
+        NSLog(@"Name has changed !");
     }];
 ```
 

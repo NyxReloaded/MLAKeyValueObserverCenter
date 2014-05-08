@@ -3,7 +3,7 @@ Key Value Observer Center
 
 MLAKeyValueObserverCenter allows you to use K.V.O as you will do with NSNotificationCenter.
 
-Its purpose is to make K.V.O notification more flexible.
+Its purpose is to make K.V.O notification more flexible :
 * Selectors and blocks as callback
 * Safe remove on observer
 * Allow retrieve observers for a given object’s keyPath

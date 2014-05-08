@@ -12,14 +12,14 @@ Its purpose is to make K.V.O notification more flexible :
 
 ```objective-c
 [[MLAKeyValueObserverCenter defaultCenter] addObserver:self 
-                                              selector:@selector(titleDidChange:) 
+                                              selector:@selector(nameDidChange:) 
                                                keyPath:@"name" 
                                                 object:self.person];
 ```
 
 
 ```objective-c
-- (void)titleDidChange:(NSDictionary *)change
+- (void)nameDidChange:(NSDictionary *)change
 {
    // implementation go here
 }

@@ -16,6 +16,6 @@ typedef void (^MLAKeyValueObserverBlock)(NSDictionary *changes);
 @property (weak, nonatomic) id observer;
 @property (copy, nonatomic) NSString *keyPath;
 @property (nonatomic) SEL selector;
-@property (strong, nonatomic) MLAKeyValueObserverBlock block;
+@property (copy, nonatomic) MLAKeyValueObserverBlock block;
 
 @end
